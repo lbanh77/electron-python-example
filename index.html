@@ -5,16 +5,11 @@
     <title>Hello Calculator!</title>
   </head>
   <body>
-    <h1>Hello Calculator!</h1>
-    <p> We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.</p>
-    <p>Input something like <code>1 + 1</code>.</p>
-    <p>This calculator supports <code>+-*/^()</code>, 
-    whitespaces, and integers and floating numbers.</p>
-    <input id="formula" value="1 + 2.0 * 3.1 / (4 ^ 5.6)"></input>
-    <div id="result"></div>
-  </body>
+    Number 1: <input id="num1" value="1"></input>
+    Number 2: <input id="num2" value="1"></input> 
+    Result: <input id="res" value="NaN"></input> 
+    <input type="button" id="btnEd" value="Sum" />
+    </body>
 
   <script>
     require('./renderer.js')
