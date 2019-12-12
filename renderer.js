@@ -18,11 +18,15 @@ let sum = document.querySelector('#btnEd')
 
 sum.addEventListener('click', () => {
   client.invoke("sumValues", num1.value, num2.value, (error, res) => {
-    result.textContent = res
+    if(error) {
+      console.error(error)
+    } else {
+      result.textContent = res
+    }
   })
 })
 
-// sum.dispatchEvent(new Event('button'))
+sum.dispatchEvent(new Event('button'))
 
 // let formula = document.querySelector('#formula')
 // let result = document.querySelector('#result')
