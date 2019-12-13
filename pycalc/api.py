@@ -1,5 +1,5 @@
 from __future__ import print_function
-# from calc import calc as real_calc
+from calc import calc as real_calc
 from sumValues import sumValues
 import sys
 import zerorpc
@@ -16,10 +16,10 @@ import zerorpc
 #         return text
 
 class CalcApi(object):
-    def calc(self, text1, text2):
+    def calc(self, text):
         """based on the input text, return the int result"""
         try:
-            return sumValues(text1, text2)
+            return real_calc(text)
         except Exception as e:
             return 0.0    
     def echo(self, text):

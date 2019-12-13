@@ -1,0 +1,196 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/Cellar/node/13.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'n'
+1 verbose cli ]
+2 info using npm@2.14.12
+3 info using node@v13.3.0
+4 verbose install initial load of /usr/local/Cellar/node/13.3.0/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/Cellar/node/13.3.0/lib/package.json
+6 silly cache add args [ 'n', null ]
+7 verbose cache add spec n
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'n',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'n',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag'
+8 silly cache add }
+9 silly addNamed n@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for n
+11 info addNameTag [ 'n', 'latest' ]
+12 silly mapToRegistry name n
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/n
+16 verbose addNameTag registry:https://registry.npmjs.org/n not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/n
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:52:09 PM
+20 verbose request id e623e04e5aedf4ee
+21 http request GET https://registry.npmjs.org/n
+22 http 200 https://registry.npmjs.org/n
+23 verbose headers {
+23 verbose headers   date: 'Tue, 10 Dec 2019 05:52:10 GMT',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'transfer-encoding': 'chunked',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie': [
+23 verbose headers     '__cfduid=d4401ff86657019bae6c94171decdd0f51575957130; expires=Thu, 09-Jan-20 05:52:10 GMT; path=/; domain=.npmjs.org; HttpOnly'
+23 verbose headers   ],
+23 verbose headers   'cf-ray': '542cf37e79c0e7a8-LAX',
+23 verbose headers   age: '52',
+23 verbose headers   'cache-control': 'public, max-age=300',
+23 verbose headers   etag: 'W/"d40fd65b14a912d5973e225f7b6b1a8e"',
+23 verbose headers   'last-modified': 'Fri, 29 Nov 2019 09:32:44 GMT',
+23 verbose headers   vary: 'accept-encoding, accept',
+23 verbose headers   'cf-cache-status': 'HIT',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   server: 'cloudflare',
+23 verbose headers   'content-encoding': 'gzip'
+23 verbose headers }
+24 silly get cb [
+24 silly get   200,
+24 silly get   {
+24 silly get     date: 'Tue, 10 Dec 2019 05:52:10 GMT',
+24 silly get     'content-type': 'application/json',
+24 silly get     'transfer-encoding': 'chunked',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie': [
+24 silly get       '__cfduid=d4401ff86657019bae6c94171decdd0f51575957130; expires=Thu, 09-Jan-20 05:52:10 GMT; path=/; domain=.npmjs.org; HttpOnly'
+24 silly get     ],
+24 silly get     'cf-ray': '542cf37e79c0e7a8-LAX',
+24 silly get     age: '52',
+24 silly get     'cache-control': 'public, max-age=300',
+24 silly get     etag: 'W/"d40fd65b14a912d5973e225f7b6b1a8e"',
+24 silly get     'last-modified': 'Fri, 29 Nov 2019 09:32:44 GMT',
+24 silly get     vary: 'accept-encoding, accept',
+24 silly get     'cf-cache-status': 'HIT',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     server: 'cloudflare',
+24 silly get     'content-encoding': 'gzip'
+24 silly get   }
+24 silly get ]
+25 verbose get saving n to /Users/lindabanh/.npm/registry.npmjs.org/n/.cache.json
+26 silly addNameTag next cb for n with tag latest
+27 silly addNamed n@6.1.3
+28 verbose addNamed "6.1.3" is a plain semver version for n
+29 silly mapToRegistry name n
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/n
+33 verbose addRemoteTarball https://registry.npmjs.org/n/-/n-6.1.3.tgz not in flight; adding
+34 verbose addRemoteTarball [
+34 verbose addRemoteTarball   'https://registry.npmjs.org/n/-/n-6.1.3.tgz',
+34 verbose addRemoteTarball   'e74918f2dcafea03ccc6e687ff2212d9b37594ea'
+34 verbose addRemoteTarball ]
+35 info retry fetch attempt 1 at 9:52:10 PM
+36 info attempt registry request try #1 at 9:52:10 PM
+37 http fetch GET https://registry.npmjs.org/n/-/n-6.1.3.tgz
+38 http fetch 200 https://registry.npmjs.org/n/-/n-6.1.3.tgz
+39 silly fetchAndShaCheck shasum e74918f2dcafea03ccc6e687ff2212d9b37594ea
+40 verbose addTmpTarball /var/folders/86/_g_fm__5519cjfq0s7tpfvn00000gn/T/npm-16119-5da2d43b/registry.npmjs.org/n/-/n-6.1.3.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for n@6.1.3
+42 silly cache afterAdd n@6.1.3
+43 verbose afterAdd /Users/lindabanh/.npm/n/6.1.3/package/package.json not in flight; writing
+44 verbose afterAdd /Users/lindabanh/.npm/n/6.1.3/package/package.json written
+45 silly install resolved [
+45 silly install resolved   {
+45 silly install resolved     name: 'n',
+45 silly install resolved     description: 'Interactively Manage All Your Node Versions',
+45 silly install resolved     version: '6.1.3',
+45 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+45 silly install resolved     homepage: 'https://github.com/tj/n',
+45 silly install resolved     bugs: { url: 'https://github.com/tj/n/issues' },
+45 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+45 silly install resolved     keywords: [
+45 silly install resolved       'nvm',      'node',
+45 silly install resolved       'version',  'manager',
+45 silly install resolved       'switcher', 'node',
+45 silly install resolved       'binary',   'env'
+45 silly install resolved     ],
+45 silly install resolved     bin: { n: './bin/n' },
+45 silly install resolved     repository: { type: 'git', url: 'git://github.com/tj/n.git' },
+45 silly install resolved     scripts: { test: 'test/bin/run-all-tests' },
+45 silly install resolved     devDependencies: { bats: '^1.1.0' },
+45 silly install resolved     preferGlobal: true,
+45 silly install resolved     os: [ '!win32' ],
+45 silly install resolved     engines: { node: '*' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     gitHead: '80b5194f8754d2f4e2cfa9e5cac2ec11c0df6041',
+45 silly install resolved     _id: 'n@6.1.3',
+45 silly install resolved     _nodeVersion: '12.13.1',
+45 silly install resolved     _npmVersion: '6.12.1',
+45 silly install resolved     dist: {
+45 silly install resolved       integrity: 'sha512-BqK4qIpBlJ9tRqFmGkAnNzGVqkQFsXKXff5NERIn61PNmX1VZ0i+yIK3lsP/ZUqIZYGYKLO6dXOWaBxC1zYvCw==',
+45 silly install resolved       shasum: 'e74918f2dcafea03ccc6e687ff2212d9b37594ea',
+45 silly install resolved       tarball: 'https://registry.npmjs.org/n/-/n-6.1.3.tgz',
+45 silly install resolved       fileCount: 5,
+45 silly install resolved       unpackedSize: 53690,
+45 silly install resolved       'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\n' +
+45 silly install resolved         'Version: OpenPGP.js v3.0.4\r\n' +
+45 silly install resolved         'Comment: https://openpgpjs.org\r\n' +
+45 silly install resolved         '\r\n' +
+45 silly install resolved         'wsFcBAEBCAAQBQJd2LwyCRA9TVsSAnZWagAA3e0P/Rx+LeUy/4MBURwG1Z7p\n' +
+45 silly install resolved         'qvSFuZzFSQkg+7RzNF44ylocCaJ68Hpv43uPwtNkzKylZj3wTS/whO7UGWwg\n' +
+45 silly install resolved         'Q2Kud4dY+gdmjs9taf0DK0P16LTLPBN+v4lLXMyKNUepNvksqBjiXp7YgzW0\n' +
+45 silly install resolved         'HkjuTnMAKpRzTMBpcX8KExrRm7IW/EnFbgnaDhRqVhT3URJf0GNuHV1XXK+W\n' +
+45 silly install resolved         'ml+o/TDu+DjTpa5DqaKgTOcT24iRXvc4JRpitkMpusLHzT5sRfSWXQC5Aj0e\n' +
+45 silly install resolved         'wJ+wUZKvbw+xmhD8v7KxRKAn+n0mJQHH9xUttzJEP7P4n9+z1tXAJ4IEqdlV\n' +
+45 silly install resolved         'PlDjLMLOPXH6pLRQeKgGeEz/Yjhf5tDu62E/Y9IwdCKHaZItBDJXIemWGSrS\n' +
+45 silly install resolved         'K/jbwuO5HJGpkGwTRZiEsvqyEEcbAlJR8x7YRkWryrldRyWpQeok8nUqqQgX\n' +
+45 silly install resolved         'pJ9pHwSQrnI17VEZwr4cPTrw1/qBfmTrRInY06FpE0m2XbbLbs2BDUbGUe1F\n' +
+45 silly install resolved         'wfVIYizmkf/xBDh4vekDW4owl+fUL+8ZhJ8T2eOov1tUzW9L8pKdjnBavuQa\n' +
+45 silly install resolved         'Y7KmUe33V4dfqdaayggaWgvd9Z707hcCafjxTp+UTjTsrSK/BXLXXK5xzRTe\n' +
+45 silly install resolved         'Pf0U8+1urHNtn/ITpACK9i0Zo7KuLT+OaWH0ALkA+TzELRduiqNA5WSrlXLF\n' +
+45 silly install resolved         'qpAr\r\n' +
+45 silly install resolved         '=UqJd\r\n' +
+45 silly install resolved         '-----END PGP SIGNATURE-----\r\n'
+45 silly install resolved     },
+45 silly install resolved     maintainers: [
+45 silly install resolved       [Object], [Object],
+45 silly install resolved       [Object], [Object],
+45 silly install resolved       [Object], [Object],
+45 silly install resolved       [Object]
+45 silly install resolved     ],
+45 silly install resolved     _npmUser: { name: 'shadowspawn', email: 'npm_j@ruru.gen.nz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _npmOperationalInternal: {
+45 silly install resolved       host: 's3://npm-registry-packages',
+45 silly install resolved       tmp: 'tmp/n_6.1.3_1574485041599_0.5693337955932738'
+45 silly install resolved     },
+45 silly install resolved     _hasShrinkwrap: false,
+45 silly install resolved     _shasum: 'e74918f2dcafea03ccc6e687ff2212d9b37594ea',
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/n/-/n-6.1.3.tgz',
+45 silly install resolved     _from: 'n@latest'
+45 silly install resolved   }
+45 silly install resolved ]
+46 info install n@6.1.3 into /usr/local/Cellar/node/13.3.0/lib
+47 info installOne n@6.1.3
+48 verbose installOne of n to /usr/local/Cellar/node/13.3.0/lib not in flight; installing
+49 verbose lock using /Users/lindabanh/.npm/_locks/n-ea61b8fe82b5cfe9.lock for /usr/local/Cellar/node/13.3.0/lib/node_modules/n
+50 silly install write writing n 6.1.3 to /usr/local/Cellar/node/13.3.0/lib/node_modules/n
+51 verbose stack ReferenceError: primordials is not defined
+51 verbose stack     at evalmachine.<anonymous>:33:5
+51 verbose stack     at Object.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/cmd-shim/node_modules/graceful-fs/fs.js:11:1)
+51 verbose stack     at Module._compile (internal/modules/cjs/loader.js:1128:30)
+51 verbose stack     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+51 verbose stack     at Module.load (internal/modules/cjs/loader.js:983:32)
+51 verbose stack     at Function.Module._load (internal/modules/cjs/loader.js:891:14)
+51 verbose stack     at Module.require (internal/modules/cjs/loader.js:1023:19)
+51 verbose stack     at require (internal/modules/cjs/helpers.js:72:18)
+51 verbose stack     at Object.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/cmd-shim/node_modules/graceful-fs/graceful-fs.js:3:27)
+51 verbose stack     at Module._compile (internal/modules/cjs/loader.js:1128:30)
+52 verbose cwd /Users/lindabanh/Documents/Projects/electron-python-example
+53 error Darwin 18.7.0
+54 error argv "/usr/local/Cellar/node/13.3.0/bin/node" "/usr/local/bin/npm" "install" "-g" "n"
+55 error node v13.3.0
+56 error npm  v2.14.12
+57 error primordials is not defined
+58 error If you need help, you may report this error at:
+58 error     <https://github.com/npm/npm/issues>
+59 verbose exit [ 1, true ]

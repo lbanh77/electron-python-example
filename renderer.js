@@ -13,15 +13,15 @@ client.invoke("echo", "server ready", (error, res) => {
     
 let num1 = document.querySelector('#num1')
 let num2 = document.querySelector('#num2')
-let result = document.querySelector('#result')
+let result = document.querySelector('#res')
 let sum = document.querySelector('#btnEd')
 
 sum.addEventListener('click', () => {
-  client.invoke("sumValues", num1.value, num2.value, (error, res) => {
+  client.invoke("calc", num1.value + "+" + num2.value, (error, res) => {
     if(error) {
       console.error(error)
     } else {
-      result.textContent = res
+      result.value = res
     }
   })
 })
